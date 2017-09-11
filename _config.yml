@@ -1,1 +1,32 @@
-theme: jekyll-theme-slate
+title: 현자타임
+author: Wiseman
+description: > # this means to ignore newlines until "baseurl:"
+  그다지 지혜롭지 못한 현자들의 당연하게 재미 없는 이야기
+
+#twitter_username: jekyllrb
+#github_username:  jekyll
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%Y-%m-%d"
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.html
+# - feed.xml
+
+# Build settings
+markdown: kramdown
+theme: minima
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+feed:
+  path: feed.xml
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
