@@ -12,7 +12,14 @@ layout: default
       </time>
       {% if page.author %}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {% endif %}</p>
+      {% endif %}
+      {% if page.tags %}
+          {% for tag in page.tags %}
+            {% capture tag_name %}{{ tag }}{% endcapture %}
+            <a href="https://google.com?q={{ tag_name }}">#{{ tag_name }}&nbsp;</a>
+          {% endfor %}
+      {% endif %}
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
