@@ -8,6 +8,10 @@
 * Check with your local Jekyll `bundle exec jekyll serve --watch`
 * Commit & push (No PR, THX!)
 
+## Tips
+
+* Don't forget set timezone (+0900) in frontmatter date
+
 ## License
 
 * All codes are available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

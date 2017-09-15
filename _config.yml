@@ -18,11 +18,11 @@ minima:
 # - feed.xml
 
 # Build settings
-markdown: kramdown
 theme: minima
 exclude:
   - Gemfile
   - Gemfile.lock
+  - script/
 
 feed:
   path: feed.xml
